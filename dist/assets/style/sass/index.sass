@@ -1,20 +1,131 @@
-//Fonts
-$font-primary: 'Rubik', sans-serif
-    
-//Colors
-    
-// Primary
-$Blue: hsl(246, 80%, 60%)
+@use 'variables'
+@use 'mixins'
 
-$Lightred-work: hsl(15, 100%, 70%)
-$Softblue-play: hsl(195, 74%, 62%)
-$Lightred-study: hsl(348, 100%, 68%)
-$Limegreen-exercise: hsl(145, 58%, 55%)
-$Violet-social: hsl(264, 64%, 52%)
-$Softorange-selfcare: hsl(43, 84%, 65%)
+* 
+    box-sizing: border-box
 
-// Neutral
-$Verydarkblue: hsl(226, 43%, 10%)
-$Darkblue: hsl(235, 46%, 20%)
-$Desaturatedblue: hsl(235, 45%, 61%)
-$PaleBlue: hsl(236, 100%, 87%)
+body
+    background: variables.$body-bg
+    font-family: variables.$font-primary
+    color: variables.$font-color-primary
+
+.dashboard
+    @include mixins.flexbox(flex, column, none, center)
+    gap: 1.5rem
+    padding: 5rem 0
+
+    &-header
+        background: variables.$box-bg
+        border-radius: 15px
+        width: 88%
+
+        &-profile
+            @include mixins.flexbox(flex, row, center, center)
+            gap: 5vw
+            background: variables.$profile-bg
+            padding: 2rem
+            border-radius: 15px
+
+            &__imagem
+                width: 70px
+                height: 70px
+                border: 3px solid white
+                border-radius: 50%
+                background-image: url("/dist/assets/img/image-jeremy.png")
+                background-position: center
+                background-size: cover
+            
+            &__text
+                @include mixins.flexbox(flex, column, none, none)
+                gap: 0.5rem
+
+                span
+                    color: variables.$font-color-secondary
+                    font-size: 15px
+                    font-weight: 400
+                
+                h2
+                    font-size: 24px
+                    font-weight: 300
+
+        &-periods
+            @include mixins.flexbox(flex, row, space-around, none)
+            padding: 1.5rem 0
+
+            input
+                display: none
+
+                // &:checked ~ label
+                //     color: variables.$font-color-primary
+
+            label
+                color: variables.$font-color-tertiary
+                font-size: 18px
+
+    &-list
+        @include mixins.flexbox(flex, column, none, none)
+        gap: 1.5rem
+        width: 88%
+        
+        &-item
+            border-radius: 15px
+            padding-top: 2.5rem
+
+            &-content
+                @include mixins.flexbox(flex, column, none, none)
+                gap: 0.8rem
+                background: variables.$box-bg
+                border-radius: 15px
+                padding: 2rem
+
+                &-primary
+                    @include mixins.flexbox(flex, row, space-between, none)
+
+                    h2
+                        font-size: 18px
+                        font-weight: 500
+                    
+                    i
+                        font-size: 18px
+                        color: variables.$font-color-secondary
+
+                &-secundary
+                    @include mixins.flexbox(flex, row, space-between, center)
+
+                    h3
+                        font-size: 30px
+                        font-weight: 300
+                    
+                    span
+                        font-size: 15px
+                        font-weight: 300
+                        color: variables.$font-color-secondary
+
+        .work
+            background: variables.$work-bg
+            background-image: url('')
+        
+        .play
+            background: variables.$play-bg
+            background-image: url('')
+        
+        .study
+            background: variables.$study-bg
+            background-image: url('')
+        
+        .exercise
+            background: variables.$exercise-bg
+            background-image: url('')
+        
+        .social
+            background: variables.$social-bg
+            background-image: url('')
+
+        .self-care
+            background: variables.$selfcare-bg
+            background-image: url('')
+
+                    
+
+    
+

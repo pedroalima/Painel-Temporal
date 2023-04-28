@@ -1,3 +1,149 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  background: hsl(226, 43%, 10%);
+  font-family: "Rubik", sans-serif;
+  color: #FFFFFF;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 5rem 0;
+}
+.dashboard-header {
+  background: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  width: 88%;
+}
+.dashboard-header-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  background: hsl(246, 80%, 60%);
+  padding: 2rem;
+  border-radius: 15px;
+}
+.dashboard-header-profile__imagem {
+  width: 70px;
+  height: 70px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-image: url("/dist/assets/img/image-jeremy.png");
+  background-position: center;
+  background-size: cover;
+}
+.dashboard-header-profile__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: 0.5rem;
+}
+.dashboard-header-profile__text span {
+  color: hsl(236, 100%, 87%);
+  font-size: 15px;
+  font-weight: 400;
+}
+.dashboard-header-profile__text h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+.dashboard-header-periods {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: none;
+  padding: 1.5rem 0;
+}
+.dashboard-header-periods input {
+  display: none;
+}
+.dashboard-header-periods label {
+  color: hsl(235, 45%, 61%);
+  font-size: 18px;
+}
+.dashboard-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: 1.5rem;
+  width: 88%;
+}
+.dashboard-list-item {
+  border-radius: 15px;
+  padding-top: 2.5rem;
+}
+.dashboard-list-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: 0.8rem;
+  background: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  padding: 2rem;
+}
+.dashboard-list-item-content-primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+}
+.dashboard-list-item-content-primary h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.dashboard-list-item-content-primary i {
+  font-size: 18px;
+  color: hsl(236, 100%, 87%);
+}
+.dashboard-list-item-content-secundary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-list-item-content-secundary h3 {
+  font-size: 30px;
+  font-weight: 300;
+}
+.dashboard-list-item-content-secundary span {
+  font-size: 15px;
+  font-weight: 300;
+  color: hsl(236, 100%, 87%);
+}
+.dashboard-list .work {
+  background: hsl(15, 100%, 70%);
+  background-image: url("");
+}
+.dashboard-list .play {
+  background: hsl(195, 74%, 62%);
+  background-image: url("");
+}
+.dashboard-list .study {
+  background: hsl(348, 100%, 68%);
+  background-image: url("");
+}
+.dashboard-list .exercise {
+  background: hsl(145, 58%, 55%);
+  background-image: url("");
+}
+.dashboard-list .social {
+  background: hsl(264, 64%, 52%);
+  background-image: url("");
+}
+.dashboard-list .self-care {
+  background: hsl(43, 84%, 65%);
+  background-image: url("");
+}
 
 /*# sourceMappingURL=index.css.map */
