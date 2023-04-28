@@ -26,12 +26,15 @@ Os usuários devem ser capazes de:
 ### Screenshots
 
 <html>
-  <!-- <h4>Menu mobile</h4>
-  <img src="./assets/img/" width="300px">
+  <h4>Layout mobile</h4>
+  <img src="./assets/img/mobile.png" width="300px">
+  <h4>Layout desktop </h4>
+  <img src="./assets/img/desktop.png" width="920px">
+  <!-- 
   <h4>Layout mobile</h4>
   <img src="./assets/img/.png" width="300px">
-  <h4>Layout desktop </h4>
-  <img src="./assets/img/" width="920px"> -->
+
+  -->
 </html>
 
 ## Resultado: [Veja como ficou!](https://painel-temporal.vercel.app/)
@@ -46,7 +49,7 @@ Os usuários devem ser capazes de:
 - [x] Mobile layout
 
 3º dia
-- [ ] Desktop layout
+- [x] Desktop layout
 
 4º dia
 - [ ] Features
@@ -73,7 +76,7 @@ Os usuários devem ser capazes de:
 Trechos de destaque:
 
 TypeScript
-```scss
+```ts
 ...
 
 ...
