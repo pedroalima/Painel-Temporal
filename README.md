@@ -34,7 +34,7 @@ Os usuários devem ser capazes de:
   <img src="./assets/img/" width="920px"> -->
 </html>
 
-## Resultado: [Veja como ficou!](??????)
+## Resultado: [Veja como ficou!](https://painel-temporal.vercel.app/)
 
 ## Minha caminhada
 
@@ -43,7 +43,7 @@ Os usuários devem ser capazes de:
 - [x] Preparativos
 
 2º dia
-- [ ] Mobile layout
+- [x] Mobile layout
 
 3º dia
 - [ ] Desktop layout
