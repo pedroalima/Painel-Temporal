@@ -33,7 +33,6 @@ Os usuários devem ser capazes de:
   <!-- 
   <h4>Layout mobile</h4>
   <img src="./assets/img/.png" width="300px">
-
   -->
 </html>
 

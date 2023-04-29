@@ -30,13 +30,13 @@
                         <h2>Jeremy Robson</h2>
                     </div>
                 </div>
-                <div class="dashboard-header-periods">
+                <div class="dashboard-header-periods" id="periods">
                     <input type="radio" id="dayle" name="periods">
-                    <label for="dayle">Daily</label>
+                    <label for="dayle" id="dayleSelector">Daily</label>
                     <input type="radio" id="weekly" name="periods">
-                    <label for="weekly">Weekly</label>
+                    <label for="weekly" id="weeklySelector">Weekly</label>
                     <input type="radio" id="monthly" name="periods">
-                    <label for="monthly">Monthly</label>
+                    <label for="monthly" id="monthlySelector">Monthly</label>
                 </div>
             </div>
 
@@ -49,8 +49,10 @@
                             <i></i>
                         </div>
                         <div class="dashboard-list-item-content-secundary">
-                            <h3>32hrs</h3>
-                            <span>Last Week - 36hrs</span>
+                            <h3 id="workCurrentOutput"></h3>
+                            <!-- 32hrs -->
+                            <span id="workPreviousOutput"></span>
+                            <!-- Last Week - 36hrs -->
                         </div>
                     </div>
                 </li>
@@ -62,8 +64,10 @@
                             <i></i>
                         </div>
                         <div class="dashboard-list-item-content-secundary">
-                            <h3>10hrs</h3>
-                            <span>Last Week - 8hrs</span>
+                            <h3 id="playCurrentOutput"></h3>
+                            <!-- 10hrs -->
+                            <span id="playPreviousOutput"></span>
+                            <!-- Last Week - 8hrs -->
                         </div>
                     </div>
                 </li>
@@ -75,8 +79,10 @@
                             <i></i>
                         </div>
                         <div class="dashboard-list-item-content-secundary">
-                            <h3>4hrs</h3>
-                            <span>Last Week - 7hrs</span>
+                            <h3 id="studyCurrentOutput"></h3>
+                            <!-- 4hrs -->
+                            <span id="studyPreviousOutput"></span>
+                            <!-- Last Week - 7hrs -->
                         </div>
                     </div>
                 </li>
@@ -88,8 +94,10 @@
                             <i></i>
                         </div>
                         <div class="dashboard-list-item-content-secundary">
-                            <h3>4hrs</h3>
-                            <span>Last Week - 5hrs</span>
+                            <h3 id="exerciseCurrentOutput"></h3>
+                            <!-- 4hrs -->
+                            <span id="exercisePreviousOutput"></span>
+                            <!-- Last Week - 5hrs -->
                         </div>
                     </div>
                 </li>
@@ -101,8 +109,10 @@
                             <i></i>
                         </div>
                         <div class="dashboard-list-item-content-secundary">
-                            <h3>5hrs</h3>
-                            <span>Last Week - 10hrs</span>
+                            <h3 id="socialCurrentOutput"></h3>
+                            <!-- 5hrs -->
+                            <span id="socialPreviousOutput"></span>
+                            <!-- Last Week - 10hrs -->
                         </div>
                     </div>
                 </li>
@@ -114,8 +124,10 @@
                             <i></i>
                         </div>
                         <div class="dashboard-list-item-content-secundary">
-                            <h3>2hrs</h3>
-                            <span>Last Week - 2hrs</span>
+                            <h3 id="selfCareCurrentOutput"></h3>
+                            <!-- 2hrs -->
+                            <span id="selfCarePreviousOutput"></span>
+                            <!-- Last Week - 2hrs -->
                         </div>
                     </div>
                 </li>
