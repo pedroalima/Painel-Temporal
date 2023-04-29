@@ -51,7 +51,7 @@ Os usuários devem ser capazes de:
 - [x] Desktop layout
 
 4º dia
-- [ ] Features
+- [x] Feature de aprensetação dos status semanais
 
 5º dia
 - [ ] Features
