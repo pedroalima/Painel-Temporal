@@ -54,7 +54,8 @@ Os usuários devem ser capazes de:
 - [x] Feature de aprensetação dos status semanais
 
 5º dia
-- [ ] Features
+- [x] Featuresde aprensetação dos status diários e mensais
+- [x] Refatoração das funções
 
 6º dia
 - [ ] Features
