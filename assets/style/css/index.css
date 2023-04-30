@@ -63,10 +63,13 @@ body {
   align-items: none;
   padding: 1.5rem 0;
 }
-.dashboard-header-periods input {
+.dashboard-header-periods .trigger-input {
   display: none;
 }
-.dashboard-header-periods label {
+.dashboard-header-periods .trigger-input:checked + .trigger-label {
+  color: #FFFFFF;
+}
+.dashboard-header-periods .trigger-label {
   color: hsl(235, 45%, 61%);
   font-size: 18px;
 }

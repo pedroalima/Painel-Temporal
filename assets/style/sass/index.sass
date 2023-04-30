@@ -52,13 +52,13 @@ body
             @include mixins.flexbox(flex, row, space-around, none)
             padding: 1.5rem 0
 
-            input
+            .trigger-input
                 display: none
 
-                // &:checked ~ label
-                //     color: variables.$font-color-primary
+                &:checked + .trigger-label
+                    color: variables.$font-color-primary
 
-            label
+            .trigger-label
                 color: variables.$font-color-tertiary
                 font-size: 18px
 
