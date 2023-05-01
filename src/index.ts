@@ -3,16 +3,16 @@ const obj = [
       "title": "Work",
       "timeframes": {
         "daily": {
-          "current": 5,
-          "previous": 7
+          "current": 4,
+          "previous": 2
         },
         "weekly": {
-          "current": 32,
-          "previous": 36
+          "current": 28,
+          "previous": 14
         },
         "monthly": {
-          "current": 103,
-          "previous": 128
+          "current": 120,
+          "previous": 60
         }
       }
     },
@@ -21,15 +21,15 @@ const obj = [
       "timeframes": {
         "daily": {
           "current": 1,
-          "previous": 2
+          "previous": 1
         },
         "weekly": {
-          "current": 10,
-          "previous": 8
+          "current": 7,
+          "previous": 7
         },
         "monthly": {
-          "current": 23,
-          "previous": 29
+          "current": 30,
+          "previous": 30
         }
       }
     },
@@ -37,16 +37,16 @@ const obj = [
       "title": "Study",
       "timeframes": {
         "daily": {
-          "current": 0,
-          "previous": 1
+          "current": 3,
+          "previous": 2
         },
         "weekly": {
-          "current": 4,
-          "previous": 7
+          "current": 21,
+          "previous": 14
         },
         "monthly": {
-          "current": 13,
-          "previous": 19
+          "current": 90,
+          "previous": 60
         }
       }
     },
@@ -54,16 +54,16 @@ const obj = [
       "title": "Exercise",
       "timeframes": {
         "daily": {
-          "current": 1,
+          "current": 0,
           "previous": 1
         },
         "weekly": {
-          "current": 4,
-          "previous": 5
+          "current": 0,
+          "previous": 7
         },
         "monthly": {
-          "current": 11,
-          "previous": 18
+          "current": 0,
+          "previous": 30
         }
       }
     },
@@ -71,16 +71,16 @@ const obj = [
       "title": "Social",
       "timeframes": {
         "daily": {
-          "current": 1,
-          "previous": 3
+          "current": 2,
+          "previous": 2
         },
         "weekly": {
-          "current": 5,
-          "previous": 10
+          "current": 14,
+          "previous": 14
         },
         "monthly": {
-          "current": 21,
-          "previous": 23
+          "current": 60,
+          "previous": 60
         }
       }
     },
@@ -88,16 +88,16 @@ const obj = [
       "title": "Self Care",
       "timeframes": {
         "daily": {
-          "current": 0,
+          "current": 1,
           "previous": 1
         },
         "weekly": {
-          "current": 2,
-          "previous": 2
+          "current": 7,
+          "previous": 7
         },
         "monthly": {
-          "current": 7,
-          "previous": 11
+          "current": 30,
+          "previous": 30
         }
       }
     }
@@ -130,27 +130,27 @@ const dailyStatus = () => {
     switch (taskTitle) {
       case "Work":
         workCurrentOutput.textContent = `${taskTimeframesDailyCurrent}hrs`;
-        workPreviousOutput.textContent = `Last Week - ${taskTimeframesDailyprevious}hrs`;
+        workPreviousOutput.textContent = `Last day - ${taskTimeframesDailyprevious}hrs`;
         break;
       case "Play":
         playCurrentOutput.textContent = `${taskTimeframesDailyCurrent}hrs`;
-        playPreviousOutput.textContent = `Last Week - ${taskTimeframesDailyprevious}hrs`;
+        playPreviousOutput.textContent = `Last day - ${taskTimeframesDailyprevious}hrs`;
         break;
       case "Study":
         studyCurrentOutput.textContent = `${taskTimeframesDailyCurrent}hrs`;
-        studyPreviousOutput.textContent = `Last Week - ${taskTimeframesDailyprevious}hrs`;
+        studyPreviousOutput.textContent = `Last day - ${taskTimeframesDailyprevious}hrs`;
         break;
       case "Exercise":
         exerciseCurrentOutput.textContent = `${taskTimeframesDailyCurrent}hrs`;
-        exercisePreviousOutput.textContent = `Last Week - ${taskTimeframesDailyprevious}hrs`;
+        exercisePreviousOutput.textContent = `Last day - ${taskTimeframesDailyprevious}hrs`;
         break;
       case "Social":
         socialCurrentOutput.textContent = `${taskTimeframesDailyCurrent}hrs`;
-        socialPreviousOutput.textContent = `Last Week - ${taskTimeframesDailyprevious}hrs`;
+        socialPreviousOutput.textContent = `Last day - ${taskTimeframesDailyprevious}hrs`;
         break;
       case "Self Care":
         selfCareCurrentOutput.textContent = `${taskTimeframesDailyCurrent}hrs`;
-        selfCarePreviousOutput.textContent = `Last Week - ${taskTimeframesDailyprevious}hrs`;
+        selfCarePreviousOutput.textContent = `Last day - ${taskTimeframesDailyprevious}hrs`;
         break;
     }
   })
@@ -229,27 +229,27 @@ const monthlyStatus = () => {
     switch (taskTitle) {
       case "Work":
         workCurrentOutput.textContent = `${taskTimeframesMonthlyCurrent}hrs`;
-        workPreviousOutput.textContent = `Last Week - ${taskTimeframesMonthlyprevious}hrs`;
+        workPreviousOutput.textContent = `Last Month - ${taskTimeframesMonthlyprevious}hrs`;
         break;
       case "Play":
         playCurrentOutput.textContent = `${taskTimeframesMonthlyCurrent}hrs`;
-        playPreviousOutput.textContent = `Last Week - ${taskTimeframesMonthlyprevious}hrs`;
+        playPreviousOutput.textContent = `Last Month - ${taskTimeframesMonthlyprevious}hrs`;
         break;
       case "Study":
         studyCurrentOutput.textContent = `${taskTimeframesMonthlyCurrent}hrs`;
-        studyPreviousOutput.textContent = `Last Week - ${taskTimeframesMonthlyprevious}hrs`;
+        studyPreviousOutput.textContent = `Last Month - ${taskTimeframesMonthlyprevious}hrs`;
         break;
       case "Exercise":
         exerciseCurrentOutput.textContent = `${taskTimeframesMonthlyCurrent}hrs`;
-        exercisePreviousOutput.textContent = `Last Week - ${taskTimeframesMonthlyprevious}hrs`;
+        exercisePreviousOutput.textContent = `Last Month - ${taskTimeframesMonthlyprevious}hrs`;
         break;
       case "Social":
         socialCurrentOutput.textContent = `${taskTimeframesMonthlyCurrent}hrs`;
-        socialPreviousOutput.textContent = `Last Week - ${taskTimeframesMonthlyprevious}hrs`;
+        socialPreviousOutput.textContent = `Last Month - ${taskTimeframesMonthlyprevious}hrs`;
         break;
       case "Self Care":
         selfCareCurrentOutput.textContent = `${taskTimeframesMonthlyCurrent}hrs`;
-        selfCarePreviousOutput.textContent = `Last Week - ${taskTimeframesMonthlyprevious}hrs`;
+        selfCarePreviousOutput.textContent = `Last Month - ${taskTimeframesMonthlyprevious}hrs`;
         break;
     }
   })
