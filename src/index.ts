@@ -1,4 +1,4 @@
-const obj = [
+const tasks = [
   {
     title: "Work",
     timeFrames: {
@@ -115,9 +115,9 @@ const updateStatusOutputs = (index: number, TaskTimeFramesCurrent: number, taskT
 
 const dailyStatus = () => {
 
-  for (let i = 0; i < obj.length; i++) {
-    const taskTimeFramesDailyCurrent = obj[i].timeFrames.daily.current;
-    const taskTimeFramesDailyPrevious = obj[i].timeFrames.daily.previous;
+  for (let i = 0; i < tasks.length; i++) {
+    const taskTimeFramesDailyCurrent = tasks[i].timeFrames.daily.current;
+    const taskTimeFramesDailyPrevious = tasks[i].timeFrames.daily.previous;
 
     updateStatusOutputs(i, taskTimeFramesDailyCurrent, taskTimeFramesDailyPrevious);
   }
@@ -125,9 +125,9 @@ const dailyStatus = () => {
 
 const weeklyStatus = () => {
 
-  for (let i = 0; i < obj.length; i++) {
-    const taskTimeFramesWeeklyCurrent = obj[i].timeFrames.weekly.current;
-    const taskTimeFramesWeeklyPrevious = obj[i].timeFrames.weekly.previous;
+  for (let i = 0; i < tasks.length; i++) {
+    const taskTimeFramesWeeklyCurrent = tasks[i].timeFrames.weekly.current;
+    const taskTimeFramesWeeklyPrevious = tasks[i].timeFrames.weekly.previous;
 
     updateStatusOutputs(i, taskTimeFramesWeeklyCurrent, taskTimeFramesWeeklyPrevious);
   }
@@ -135,9 +135,9 @@ const weeklyStatus = () => {
 
 const monthlyStatus = () => {
 
-  for (let i = 0; i < obj.length; i++) {
-    const taskTimeFramesMonthlyCurrent = obj[i].timeFrames.monthly.current;
-    const taskTimeFramesMonthlyPrevious = obj[i].timeFrames.monthly.previous;
+  for (let i = 0; i < tasks.length; i++) {
+    const taskTimeFramesMonthlyCurrent = tasks[i].timeFrames.monthly.current;
+    const taskTimeFramesMonthlyPrevious = tasks[i].timeFrames.monthly.previous;
 
     updateStatusOutputs(i, taskTimeFramesMonthlyCurrent, taskTimeFramesMonthlyPrevious);
   }
