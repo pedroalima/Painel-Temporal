@@ -1,104 +1,104 @@
 "use strict";
 const obj = [
     {
-        "title": "Work",
-        "timeframes": {
-            "daily": {
-                "current": 4,
-                "previous": 2
+        title: "Work",
+        timeFrames: {
+            daily: {
+                current: 4,
+                previous: 2
             },
-            "weekly": {
-                "current": 28,
-                "previous": 14
+            weekly: {
+                current: 28,
+                previous: 14
             },
-            "monthly": {
-                "current": 120,
-                "previous": 60
+            monthly: {
+                current: 120,
+                previous: 60
             }
         }
     },
     {
-        "title": "Play",
-        "timeframes": {
-            "daily": {
-                "current": 1,
-                "previous": 1
+        title: "Play",
+        timeFrames: {
+            daily: {
+                current: 1,
+                previous: 1
             },
-            "weekly": {
-                "current": 7,
-                "previous": 7
+            weekly: {
+                current: 7,
+                previous: 7
             },
-            "monthly": {
-                "current": 30,
-                "previous": 30
+            monthly: {
+                current: 30,
+                previous: 30
             }
         }
     },
     {
-        "title": "Study",
-        "timeframes": {
-            "daily": {
-                "current": 3,
-                "previous": 2
+        title: "Study",
+        timeFrames: {
+            daily: {
+                current: 3,
+                previous: 2
             },
-            "weekly": {
-                "current": 21,
-                "previous": 14
+            weekly: {
+                current: 21,
+                previous: 14
             },
-            "monthly": {
-                "current": 90,
-                "previous": 60
+            monthly: {
+                current: 90,
+                previous: 60
             }
         }
     },
     {
-        "title": "Exercise",
-        "timeframes": {
-            "daily": {
-                "current": 0,
-                "previous": 1
+        title: "Exercise",
+        timeFrames: {
+            daily: {
+                current: 0,
+                previous: 1
             },
-            "weekly": {
-                "current": 0,
-                "previous": 7
+            weekly: {
+                current: 0,
+                previous: 7
             },
-            "monthly": {
-                "current": 0,
-                "previous": 30
+            monthly: {
+                current: 0,
+                previous: 30
             }
         }
     },
     {
-        "title": "Social",
-        "timeframes": {
-            "daily": {
-                "current": 2,
-                "previous": 2
+        title: "Social",
+        timeFrames: {
+            daily: {
+                current: 2,
+                previous: 2
             },
-            "weekly": {
-                "current": 14,
-                "previous": 14
+            weekly: {
+                current: 14,
+                previous: 14
             },
-            "monthly": {
-                "current": 60,
-                "previous": 60
+            monthly: {
+                current: 60,
+                previous: 60
             }
         }
     },
     {
-        "title": "Self Care",
-        "timeframes": {
-            "daily": {
-                "current": 1,
-                "previous": 1
+        title: "Self Care",
+        timeFrames: {
+            daily: {
+                current: 1,
+                previous: 1
             },
-            "weekly": {
-                "current": 7,
-                "previous": 7
+            weekly: {
+                current: 7,
+                previous: 7
             },
-            "monthly": {
-                "current": 30,
-                "previous": 30
+            monthly: {
+                current: 30,
+                previous: 30
             }
         }
     }
@@ -107,89 +107,29 @@ const obj = [
 const currentOutput = document.querySelectorAll(".currentOutput");
 const previousOutput = document.querySelectorAll(".previousOutput");
 // Functions
-const upedateStatusOutputs = (index, TaskTimeframesCurrent, taskTimeframesPrevious) => {
-    currentOutput[index].textContent = `${TaskTimeframesCurrent}hrs`;
-    previousOutput[index].textContent = `Last day - ${taskTimeframesPrevious}hrs`;
+const updateStatusOutputs = (index, TaskTimeFramesCurrent, taskTimeFramesPrevious) => {
+    currentOutput[index].textContent = `${TaskTimeFramesCurrent}hrs`;
+    previousOutput[index].textContent = `Last day - ${taskTimeFramesPrevious}hrs`;
 };
 const dailyStatus = () => {
     for (let i = 0; i < obj.length; i++) {
-        const taskTitle = obj[i].title;
-        const taskTimeframesDailyCurrent = obj[i].timeframes.daily.current;
-        const taskTimeframesDailyprevious = obj[i].timeframes.daily.previous;
-        switch (taskTitle) {
-            case "Work":
-                upedateStatusOutputs(i, taskTimeframesDailyCurrent, taskTimeframesDailyprevious);
-                break;
-            case "Play":
-                upedateStatusOutputs(i, taskTimeframesDailyCurrent, taskTimeframesDailyprevious);
-                break;
-            case "Study":
-                upedateStatusOutputs(i, taskTimeframesDailyCurrent, taskTimeframesDailyprevious);
-                break;
-            case "Exercise":
-                upedateStatusOutputs(i, taskTimeframesDailyCurrent, taskTimeframesDailyprevious);
-                break;
-            case "Social":
-                upedateStatusOutputs(i, taskTimeframesDailyCurrent, taskTimeframesDailyprevious);
-                break;
-            case "Self Care":
-                upedateStatusOutputs(i, taskTimeframesDailyCurrent, taskTimeframesDailyprevious);
-                break;
-        }
+        const taskTimeFramesDailyCurrent = obj[i].timeFrames.daily.current;
+        const taskTimeFramesDailyPrevious = obj[i].timeFrames.daily.previous;
+        updateStatusOutputs(i, taskTimeFramesDailyCurrent, taskTimeFramesDailyPrevious);
     }
 };
 const weeklyStatus = () => {
     for (let i = 0; i < obj.length; i++) {
-        const taskTitle = obj[i].title;
-        const taskTimeframesWeeklyCurrent = obj[i].timeframes.weekly.current;
-        const taskTimeframesWeeklyprevious = obj[i].timeframes.weekly.previous;
-        switch (taskTitle) {
-            case "Work":
-                upedateStatusOutputs(i, taskTimeframesWeeklyCurrent, taskTimeframesWeeklyprevious);
-                break;
-            case "Play":
-                upedateStatusOutputs(i, taskTimeframesWeeklyCurrent, taskTimeframesWeeklyprevious);
-                break;
-            case "Study":
-                upedateStatusOutputs(i, taskTimeframesWeeklyCurrent, taskTimeframesWeeklyprevious);
-                break;
-            case "Exercise":
-                upedateStatusOutputs(i, taskTimeframesWeeklyCurrent, taskTimeframesWeeklyprevious);
-                break;
-            case "Social":
-                upedateStatusOutputs(i, taskTimeframesWeeklyCurrent, taskTimeframesWeeklyprevious);
-                break;
-            case "Self Care":
-                upedateStatusOutputs(i, taskTimeframesWeeklyCurrent, taskTimeframesWeeklyprevious);
-                break;
-        }
+        const taskTimeFramesWeeklyCurrent = obj[i].timeFrames.weekly.current;
+        const taskTimeFramesWeeklyPrevious = obj[i].timeFrames.weekly.previous;
+        updateStatusOutputs(i, taskTimeFramesWeeklyCurrent, taskTimeFramesWeeklyPrevious);
     }
 };
 const monthlyStatus = () => {
     for (let i = 0; i < obj.length; i++) {
-        const taskTitle = obj[i].title;
-        const taskTimeframesMonthlyCurrent = obj[i].timeframes.monthly.current;
-        const taskTimeframesMonthlyprevious = obj[i].timeframes.monthly.previous;
-        switch (taskTitle) {
-            case "Work":
-                upedateStatusOutputs(i, taskTimeframesMonthlyCurrent, taskTimeframesMonthlyprevious);
-                break;
-            case "Play":
-                upedateStatusOutputs(i, taskTimeframesMonthlyCurrent, taskTimeframesMonthlyprevious);
-                break;
-            case "Study":
-                upedateStatusOutputs(i, taskTimeframesMonthlyCurrent, taskTimeframesMonthlyprevious);
-                break;
-            case "Exercise":
-                upedateStatusOutputs(i, taskTimeframesMonthlyCurrent, taskTimeframesMonthlyprevious);
-                break;
-            case "Social":
-                upedateStatusOutputs(i, taskTimeframesMonthlyCurrent, taskTimeframesMonthlyprevious);
-                break;
-            case "Self Care":
-                upedateStatusOutputs(i, taskTimeframesMonthlyCurrent, taskTimeframesMonthlyprevious);
-                break;
-        }
+        const taskTimeFramesMonthlyCurrent = obj[i].timeFrames.monthly.current;
+        const taskTimeFramesMonthlyPrevious = obj[i].timeFrames.monthly.previous;
+        updateStatusOutputs(i, taskTimeFramesMonthlyCurrent, taskTimeFramesMonthlyPrevious);
     }
 };
 // Events
