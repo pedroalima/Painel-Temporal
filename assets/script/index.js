@@ -107,6 +107,10 @@ const obj = [
 const currentOutput = document.querySelectorAll(".currentOutput");
 const previousOutput = document.querySelectorAll(".previousOutput");
 // Functions
+const upedateStatusOutputs = (index, TaskTimeframesCurrent, taskTimeframesPrevious) => {
+    currentOutput[index].textContent = `${TaskTimeframesCurrent}hrs`;
+    previousOutput[index].textContent = `Last day - ${taskTimeframesPrevious}hrs`;
+};
 const dailyStatus = () => {
     for (let i = 0; i < obj.length; i++) {
         const taskTitle = obj[i].title;
@@ -114,28 +118,22 @@ const dailyStatus = () => {
         const taskTimeframesDailyprevious = obj[i].timeframes.daily.previous;
         switch (taskTitle) {
             case "Work":
-                currentOutput[i].textContent = `${taskTimeframesDailyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesDailyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesDailyCurrent, taskTimeframesDailyprevious);
                 break;
             case "Play":
-                currentOutput[i].textContent = `${taskTimeframesDailyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesDailyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesDailyCurrent, taskTimeframesDailyprevious);
                 break;
             case "Study":
-                currentOutput[i].textContent = `${taskTimeframesDailyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesDailyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesDailyCurrent, taskTimeframesDailyprevious);
                 break;
             case "Exercise":
-                currentOutput[i].textContent = `${taskTimeframesDailyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesDailyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesDailyCurrent, taskTimeframesDailyprevious);
                 break;
             case "Social":
-                currentOutput[i].textContent = `${taskTimeframesDailyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesDailyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesDailyCurrent, taskTimeframesDailyprevious);
                 break;
             case "Self Care":
-                currentOutput[i].textContent = `${taskTimeframesDailyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesDailyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesDailyCurrent, taskTimeframesDailyprevious);
                 break;
         }
     }
@@ -147,28 +145,22 @@ const weeklyStatus = () => {
         const taskTimeframesWeeklyprevious = obj[i].timeframes.weekly.previous;
         switch (taskTitle) {
             case "Work":
-                currentOutput[i].textContent = `${taskTimeframesWeeklyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesWeeklyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesWeeklyCurrent, taskTimeframesWeeklyprevious);
                 break;
             case "Play":
-                currentOutput[i].textContent = `${taskTimeframesWeeklyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesWeeklyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesWeeklyCurrent, taskTimeframesWeeklyprevious);
                 break;
             case "Study":
-                currentOutput[i].textContent = `${taskTimeframesWeeklyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesWeeklyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesWeeklyCurrent, taskTimeframesWeeklyprevious);
                 break;
             case "Exercise":
-                currentOutput[i].textContent = `${taskTimeframesWeeklyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesWeeklyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesWeeklyCurrent, taskTimeframesWeeklyprevious);
                 break;
             case "Social":
-                currentOutput[i].textContent = `${taskTimeframesWeeklyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesWeeklyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesWeeklyCurrent, taskTimeframesWeeklyprevious);
                 break;
             case "Self Care":
-                currentOutput[i].textContent = `${taskTimeframesWeeklyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesWeeklyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesWeeklyCurrent, taskTimeframesWeeklyprevious);
                 break;
         }
     }
@@ -180,28 +172,22 @@ const monthlyStatus = () => {
         const taskTimeframesMonthlyprevious = obj[i].timeframes.monthly.previous;
         switch (taskTitle) {
             case "Work":
-                currentOutput[i].textContent = `${taskTimeframesMonthlyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesMonthlyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesMonthlyCurrent, taskTimeframesMonthlyprevious);
                 break;
             case "Play":
-                currentOutput[i].textContent = `${taskTimeframesMonthlyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesMonthlyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesMonthlyCurrent, taskTimeframesMonthlyprevious);
                 break;
             case "Study":
-                currentOutput[i].textContent = `${taskTimeframesMonthlyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesMonthlyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesMonthlyCurrent, taskTimeframesMonthlyprevious);
                 break;
             case "Exercise":
-                currentOutput[i].textContent = `${taskTimeframesMonthlyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesMonthlyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesMonthlyCurrent, taskTimeframesMonthlyprevious);
                 break;
             case "Social":
-                currentOutput[i].textContent = `${taskTimeframesMonthlyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesMonthlyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesMonthlyCurrent, taskTimeframesMonthlyprevious);
                 break;
             case "Self Care":
-                currentOutput[i].textContent = `${taskTimeframesMonthlyCurrent}hrs`;
-                previousOutput[i].textContent = `Last day - ${taskTimeframesMonthlyprevious}hrs`;
+                upedateStatusOutputs(i, taskTimeframesMonthlyCurrent, taskTimeframesMonthlyprevious);
                 break;
         }
     }
