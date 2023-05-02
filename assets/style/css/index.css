@@ -14,7 +14,7 @@ body {
   justify-content: none;
   align-items: center;
   gap: 1.5rem;
-  padding: 5rem 0;
+  padding: 5rem 0 2rem;
 }
 .dashboard-header {
   background: hsl(235, 46%, 20%);
@@ -175,8 +175,19 @@ body {
   background-size: 20%;
 }
 
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+}
+.footer p {
+  color: hsl(235, 45%, 61%);
+  font-size: 13px;
+}
+
 @media screen and (min-width: 1360px) {
   main {
+    width: 100%;
+    height: 90vh;
     padding: 10vh 10vw;
   }
   .dashboard {

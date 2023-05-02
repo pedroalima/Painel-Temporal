@@ -1,7 +1,7 @@
 @use 'variables'
 @use 'mixins'
 
-* 
+*
     box-sizing: border-box
 
 body
@@ -12,7 +12,7 @@ body
 .dashboard
     @include mixins.flexbox(flex, column, none, center)
     gap: 1.5rem
-    padding: 5rem 0
+    padding: 5rem 0 2rem
 
     &-header
         background: variables.$box-bg
@@ -34,7 +34,7 @@ body
                 background-image: url("/assets/img/image-pedro.png")
                 background-position: center
                 background-size: cover
-            
+
             &__text
                 @include mixins.flexbox(flex, column, none, none)
                 gap: 0.5rem
@@ -43,7 +43,7 @@ body
                     color: variables.$font-color-secondary
                     font-size: 15px
                     font-weight: 400
-                
+
                 h2
                     font-size: 24px
                     font-weight: 300
@@ -66,7 +66,7 @@ body
         @include mixins.flexbox(flex, column, none, none)
         gap: 1.5rem
         width: 88%
-        
+
         &-item
             border-radius: 15px
             padding-top: 2.5rem
@@ -84,7 +84,7 @@ body
                     h2
                         font-size: 18px
                         font-weight: 500
-                    
+
                     i
                         background-image: url('/assets/img/icon-ellipsis.svg')
                         background-position: center
@@ -97,7 +97,7 @@ body
                     h3
                         font-size: 30px
                         font-weight: 300
-                    
+
                     span
                         font-size: 15px
                         font-weight: 300
@@ -110,8 +110,7 @@ body
             background-position-x: 95%
             background-position-y: -10%
             background-size: 20%
-            
-        
+
         .play
             background: variables.$play-bg
             background-image: url('/assets/img/icon-play.svg')
@@ -119,7 +118,7 @@ body
             background-position-x: 95%
             background-position-y: -10%
             background-size: 20%
-        
+
         .study
             background: variables.$study-bg
             background-image: url('/assets/img/icon-study.svg')
@@ -127,7 +126,7 @@ body
             background-position-x: 95%
             background-position-y: -10%
             background-size: 20%
-        
+
         .exercise
             background: variables.$exercise-bg
             background-image: url('/assets/img/icon-exercise.svg')
@@ -135,7 +134,7 @@ body
             background-position-x: 95%
             background-position-y: 0%
             background-size: 20%
-        
+
         .social
             background: variables.$social-bg
             background-image: url('/assets/img/icon-social.svg')
@@ -152,8 +151,18 @@ body
             background-position-y: -10%
             background-size: 20%
 
+.footer
+    text-align: center
+    padding: 1.5rem
+
+    p
+        color: variables.$font-color-tertiary
+        font-size: 13px
+
 @media screen and (min-width: 1360px)
     main
+        width: 100%
+        height: 90vh
         padding: 10vh 10vw
 
     .dashboard
@@ -173,16 +182,15 @@ body
                 @include mixins.flexbox(flex, column, none, flex-start)
                 gap: 5vh
                 padding: 2rem 2rem 6rem
-                
 
                 &__imagem
                     width: 80px
                     height: 80px
-                
+
                 &__text
                     @include mixins.flexbox(flex, column, none, none)
                     gap: 1rem
-                    
+
                     h2
                         font-size: 40px
                         line-height: 45px
@@ -206,9 +214,9 @@ body
             grid-template-row: 1fr 1fr 1fr
             gap: 2rem
             width: 100%
-            
+
             &-item
-                padding-top: 3rem       
+                padding-top: 3rem
 
                 &-content
                     @include mixins.flexbox(flex, column, none, none)
@@ -219,7 +227,7 @@ body
 
                     &-primary
                         @include mixins.flexbox(flex, row, space-between, none)
-                        
+
                         i
                             cursor: pointer
 
@@ -236,22 +244,22 @@ body
                 background-position-x: 90%
                 background-position-y: -8%
                 background-size: 35%
-            
+
             .play
                 background-position-x: 90%
                 background-position-y: -8%
                 background-size: 35%
-            
+
             .study
                 background-position-x: 90%
                 background-position-y: -8%
                 background-size: 35%
-            
+
             .exercise
                 background-position-x: 90%
                 background-position-y: 0%
                 background-size: 35%
-            
+
             .social
                 background-position-x: 90%
                 background-position-y: -8%
@@ -263,6 +271,3 @@ body
                 background-position-x: 90%
                 background-position-y: -8%
                 background-size: 30%
-
-    
-
