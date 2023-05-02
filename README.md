@@ -58,7 +58,8 @@ Os usuários devem ser capazes de:
 - [x] Refatoração das funções
 
 6º dia
-- [ ] Features
+- [x] Inclusão de dados pessoais
+- [x] Refatoração des todas as funções
 
 7º dia
 - [ ] Refatoração
